@@ -1,0 +1,70 @@
+.cabeçalho {
+    background-color:var(--bege);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: relative;
+}
+.cabecalho_menu-hamburguer {
+    width:24px;
+    height:24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    display: inline-block;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+}
+.container_imagem{
+    padding:1em;
+}
+
+ .lista-menu{
+    display:none;
+    position:absolute;
+    top: 100%;
+    width: 60vw;
+}
+.container_botao:checked ~.lista-menu{
+    display: block;
+}
+.container_botao {
+display:none;
+}
+
+.lista-menu_titulo{
+    color:var(--laranja);
+    font-weight:700 ;
+}
+.lista-menu_item{
+    padding:1em;
+    background-color:var(--laranja);
+
+}
+.lista-menu_link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:black;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.card_botoes{
+    display:flex;
+    justify-content: sapce-between;
+}
+.botoes{
+    display:flex;
+}
+.botoes_item{
+    margin: 0 0.5em;
+}
+.botoes_ancora{
+    background-color:var (--laranja);
+    padding: 1em 2.2em;
+    color:var(--branco);
+    font-weight: 700;
+    text-decoration:none;
+}
